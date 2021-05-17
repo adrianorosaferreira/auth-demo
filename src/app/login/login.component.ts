@@ -16,7 +16,7 @@ export class LoginComponent {
 
   signIn(credentials) {
     this.authService.login(credentials)
-      .subscribe(result => { 
+      .subscribe((result: any) => { 
         if (result)
           this.router.navigate(['/']);
         else  
